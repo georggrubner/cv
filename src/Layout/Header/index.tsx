@@ -1,11 +1,18 @@
 import { useColorScheme } from '@mui/material/styles'
-import { Box, Button } from '@mui/material'
+import { Box, IconButton } from '@mui/material'
+import { DarkMode, LightMode } from '@mui/icons-material'
+import React from 'react'
 
 export const Header = () => {
     const { mode, setMode } = useColorScheme()
-    if (!mode) {
-        return null
-    }
+    React.useEffect(() => {
+        if (!mode) {
+            setMode('dark')
+        }
+        // only on mount
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
+
     return (
         <Box
             sx={{
@@ -18,7 +25,12 @@ export const Header = () => {
                 height: 64,
             }}
         >
-            <Button onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}>switch</Button>
+            <IconButton
+                aria-label={mode === 'dark' ? 'light' : 'dark'}
+                onClick={() => setMode(mode === 'dark' ? 'light' : 'dark')}
+            >
+                {mode === 'dark' ? <LightMode /> : <DarkMode />}
+            </IconButton>
         </Box>
     )
 }
