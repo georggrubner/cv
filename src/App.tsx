@@ -5,6 +5,13 @@ const theme = createTheme({
     colorSchemes: {
         dark: true,
     },
+    components: {
+        MuiButtonBase: {
+            defaultProps: {
+                disableRipple: true,
+            },
+        },
+    },
 })
 
 export const App = () => {
