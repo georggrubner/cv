@@ -1,7 +1,16 @@
+import { ThemeProvider, createTheme } from '@mui/material/styles'
 import { Layout } from './Layout'
 
-function App() {
-    return <Layout />
-}
+const theme = createTheme({
+    colorSchemes: {
+        dark: true,
+    },
+})
 
-export default App
+export const App = () => {
+    return (
+        <ThemeProvider theme={theme}>
+            <Layout />
+        </ThemeProvider>
+    )
+}
