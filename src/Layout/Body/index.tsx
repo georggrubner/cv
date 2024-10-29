@@ -8,7 +8,7 @@ export const Body = () => {
             <Stack alignItems="flex-start" flexGrow={3} marginTop={4}>
                 <Typography variant="h4">Frontend-Developer</Typography>
                 <Typography variant="h5">Georg Grubner</Typography>
-                <Typography variant="h6">I am a Frontend-Developer living in Vienna, Austria</Typography>
+                <Typography>I am a Frontend-Developer living in Vienna, Austria</Typography>
             </Stack>
         </Stack>
     )
