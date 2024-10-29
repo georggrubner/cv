@@ -1,19 +1,29 @@
-import { Stack, Typography } from '@mui/material'
+import { Link, Stack, Typography } from '@mui/material'
+
+const links = [
+    ['react', 'https://github.com/facebook/react'],
+    ['TypeScript', 'https://github.com/microsoft/TypeScript'],
+    ['eslint', 'https://github.com/eslint/eslint'],
+    ['prettier', 'https://github.com/prettier/prettier'],
+    ['vite', 'https://github.com/vitejs/vite'],
+    ['node', 'https://github.com/nodejs/node'],
+    ['react-query', 'https://github.com/facebook/reactreact-query'],
+    ['zustand', 'https://github.com/pmndrs/zustand'],
+    ['next.js', 'https://github.com/vercel/next.js'],
+    ['material-ui', 'https://github.com/mui/material-ui'],
+    ['tailwindcss', 'https://github.com/tailwindlabs/tailwindcss'],
+    ['classnames', 'https://github.com/JedWatson/classnames'],
+]
 
 export const CV = () => {
     return (
-        <Stack>
-            <Typography variant="h2">Georg Grubner</Typography>
-            <Stack>
-                <Typography variant="h4">About Me</Typography>
-                <Typography variant="body1">react</Typography>
-                <Typography variant="body1">node</Typography>
-                <Typography variant="body1">react-query</Typography>
-                <Typography variant="body1">zustand</Typography>
-                <Typography variant="body1">next</Typography>
-                <Typography variant="body1">mui</Typography>
-                <Typography variant="body1">ts</Typography>
-            </Stack>
+        <Stack justifyContent="space-around" marginX={10}>
+            <Typography variant="h4">#Skills</Typography>
+            {links.map(([name, href]) => (
+                <Link width="fit-content" href={href} target="_blank" rel="noopener noreferrer">
+                    <Typography variant="body1">{name}</Typography>
+                </Link>
+            ))}
         </Stack>
     )
 }
