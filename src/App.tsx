@@ -15,12 +15,10 @@ const theme = createTheme({
     },
 })
 
-export const App = () => {
-    return (
-        <ThemeProvider theme={theme}>
-            <Box bgcolor="background.default" color="text.primary" height="100vh">
-                <Layout />
-            </Box>
-        </ThemeProvider>
-    )
-}
+export const App = () => (
+    <ThemeProvider theme={theme}>
+        <Box bgcolor="background.default" color="text.primary" height="100vh">
+            <Layout />
+        </Box>
+    </ThemeProvider>
+)
