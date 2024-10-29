@@ -10,18 +10,16 @@ const linksMap: Array<[ReactNode, string]> = [
     [<Mail />, 'mailto:georg@grubner.tech'],
 ]
 
-export const Header = () => {
-    return (
-        <Stack justifyContent="space-around" height={64} direction="row" alignItems="center">
-            <Box>left</Box>
-            <Stack direction="row">
-                {linksMap.map(([icon, href]) => (
-                    <IconButton target="_blank" rel="noopener noreferrer" key={href} href={href}>
-                        {icon}
-                    </IconButton>
-                ))}
-                <ThemeSwitcher />
-            </Stack>
+export const Header = () => (
+    <Stack justifyContent="space-around" height={64} direction="row" alignItems="center">
+        <Box>left</Box>
+        <Stack direction="row">
+            {linksMap.map(([icon, href]) => (
+                <IconButton target="_blank" rel="noopener noreferrer" key={href} href={href}>
+                    {icon}
+                </IconButton>
+            ))}
+            <ThemeSwitcher />
         </Stack>
-    )
-}
+    </Stack>
+)
