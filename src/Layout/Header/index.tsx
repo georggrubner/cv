@@ -1,5 +1,5 @@
-import { GitHub, LinkedIn, Mail, Person } from '@mui/icons-material'
-import { Box, IconButton, Stack } from '@mui/material'
+import { GitHub, Home, LinkedIn, Mail, Person } from '@mui/icons-material'
+import { IconButton, Stack } from '@mui/material'
 import { ThemeSwitcher } from './ThemeSwitcher'
 import { ReactNode } from 'react'
 
@@ -12,7 +12,9 @@ const linksMap: Array<[ReactNode, string]> = [
 
 export const Header = () => (
     <Stack justifyContent="space-around" height={64} direction="row" alignItems="center">
-        <Box>left</Box>
+        <IconButton href="http://grubner.tech/">
+            <Home />
+        </IconButton>
         <Stack direction="row">
             {linksMap.map(([icon, href]) => (
                 <IconButton target="_blank" rel="noopener noreferrer" key={href} href={href}>
