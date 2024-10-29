@@ -1,5 +1,5 @@
 import { Box } from '@mui/material'
-import profile from '/public/profile.jpg'
+import profile from '/src/assets/profile.jpg'
 
 export const Profile = () => (
     <Box display="flex" justifyContent="flex-end" flexGrow={2}>
