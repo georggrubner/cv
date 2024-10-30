@@ -9,9 +9,12 @@ const links = [
     ['node', 'https://github.com/nodejs/node'],
     ['react-query', 'https://github.com/facebook/reactreact-query'],
     ['zustand', 'https://github.com/pmndrs/zustand'],
+    ['recoil', 'https://github.com/facebookexperimental/Recoil'],
     ['next.js', 'https://github.com/vercel/next.js'],
     ['material-ui', 'https://github.com/mui/material-ui'],
     ['tailwindcss', 'https://github.com/tailwindlabs/tailwindcss'],
+    ['emotion', 'https://github.com/emotion-js/emotion'],
+    ['Storybook', 'https://github.com/storybookjs/storybook'],
     ['classnames', 'https://github.com/JedWatson/classnames'],
 ]
 
