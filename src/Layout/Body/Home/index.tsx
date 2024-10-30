@@ -2,7 +2,12 @@ import { Stack, Typography } from '@mui/material'
 import { Profile } from './Profile'
 
 export const Home = () => (
-    <Stack direction={{ xs: 'column', md: 'row' }} gap={{ xs: 5, md: 10 }} alignItems="center">
+    <Stack
+        direction={{ xs: 'column', md: 'row' }}
+        gap={{ xs: 5, md: 10 }}
+        alignItems="center"
+        marginTop={{ xs: 8, md: 20 }}
+    >
         <Profile />
         <Stack alignItems="flex-start" flexGrow={3} gap={2} marginX={2}>
             <Typography variant="h4">Georg Grubner</Typography>
