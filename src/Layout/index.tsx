@@ -3,7 +3,7 @@ import { Body } from './Body'
 import { Header } from './Header'
 
 export const Layout = () => (
-    <Stack gap={20}>
+    <Stack gap={{ xs: 10, md: 20 }}>
         <Header />
         <Body />
     </Stack>
