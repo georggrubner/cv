@@ -3,7 +3,7 @@ import { Body } from "./Body"
 import { Header } from "./Header"
 
 export const Layout = () => (
-    <Stack>
+    <Stack marginTop={8}>
         <Header />
         <Body />
     </Stack>

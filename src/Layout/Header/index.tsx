@@ -1,5 +1,5 @@
 import { GitHub, Home, LinkedIn, Mail, Person } from "@mui/icons-material"
-import { IconButton, Stack } from "@mui/material"
+import { IconButton, Stack, useTheme } from "@mui/material"
 import { ThemeSwitcher } from "./ThemeSwitcher"
 import { ReactNode } from "react"
 import { usePage } from "../../zustand"
@@ -12,9 +12,22 @@ const linksMap: Array<[ReactNode, string]> = [
 
 export const Header = () => {
     const { setPage } = usePage()
+    const theme = useTheme()
 
     return (
-        <Stack justifyContent="space-around" height={64} direction="row" alignItems="center">
+        <Stack
+            justifyContent="space-around"
+            height={64}
+            direction="row"
+            alignItems="center"
+            position="fixed"
+            top={0}
+            width="100%"
+            bgcolor="background.default"
+            overflow="hidden"
+            borderBottom={`1px solid ${theme.palette.divider}`}
+            zIndex={100}
+        >
             <IconButton onClick={() => setPage("home")}>
                 <Home />
             </IconButton>
