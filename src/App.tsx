@@ -1,6 +1,6 @@
 import { ThemeProvider, createTheme } from '@mui/material/styles'
 import { Layout } from './Layout'
-import { Box, CssBaseline } from '@mui/material'
+import { CssBaseline } from '@mui/material'
 
 const theme = createTheme({
     colorSchemes: {
@@ -16,10 +16,8 @@ const theme = createTheme({
 })
 
 export const App = () => (
-    <ThemeProvider theme={theme} defaultMode="dark">
+    <ThemeProvider theme={theme} defaultMode="system">
         <CssBaseline />
-        <Box bgcolor="background.default" color="text.primary" height="100vh">
-            <Layout />
-        </Box>
+        <Layout />
     </ThemeProvider>
 )
