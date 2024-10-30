@@ -1,6 +1,6 @@
-import { create } from 'zustand'
+import { create } from "zustand"
 
-type Page = 'home' | 'cv'
+type Page = "home" | "cv"
 
 export type PageStore = {
     page: Page
@@ -8,6 +8,6 @@ export type PageStore = {
 }
 
 export const usePage = create<PageStore>((set) => ({
-    page: 'home',
+    page: "home",
     setPage: (page: Page) => set({ page }),
 }))

@@ -1,6 +1,6 @@
-import { ThemeProvider, createTheme } from '@mui/material/styles'
-import { Layout } from './Layout'
-import { CssBaseline } from '@mui/material'
+import { ThemeProvider, createTheme } from "@mui/material/styles"
+import { Layout } from "./Layout"
+import { CssBaseline } from "@mui/material"
 
 const theme = createTheme({
     colorSchemes: {
