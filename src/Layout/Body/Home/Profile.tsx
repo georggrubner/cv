@@ -10,8 +10,8 @@ export const Profile = () => (
                 objectFit: 'cover',
             }}
             src={profile}
-            width="300"
-            height="400"
+            width="250"
+            height="300"
             alt="profile"
         />
     </Box>
