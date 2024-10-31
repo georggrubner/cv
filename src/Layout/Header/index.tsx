@@ -4,10 +4,10 @@ import { ThemeSwitcher } from "./ThemeSwitcher"
 import { ReactNode } from "react"
 import { usePage } from "../../zustand"
 
-const linksMap: Array<[ReactNode, string]> = [
-    [<LinkedIn />, "https://www.linkedin.com/in/georg-grubner-3547861a6/"],
-    [<GitHub />, "https://github.com/georggrubner"],
-    [<Mail />, "mailto:georg@grubner.tech"],
+const linksMap: Array<[ReactNode, string, string]> = [
+    [<LinkedIn />, "https://www.linkedin.com/in/georg-grubner-3547861a6/", "LinkedIn"],
+    [<GitHub />, "https://github.com/georggrubner", "GitHub"],
+    [<Mail />, "mailto:georg@grubner.tech", "Email"],
 ]
 
 export const Header = () => {
@@ -28,15 +28,22 @@ export const Header = () => {
             borderBottom={`1px solid ${theme.palette.divider}`}
             zIndex={100}
         >
-            <IconButton onClick={() => setPage("home")}>
+            <IconButton onClick={() => setPage("home")} title="Home" aria-label="Home">
                 <Home />
             </IconButton>
             <Stack direction="row">
-                <IconButton onClick={() => setPage("cv")}>
+                <IconButton onClick={() => setPage("cv")} title="CV" aria-label="CV">
                     <Person />
                 </IconButton>
-                {linksMap.map(([icon, href]) => (
-                    <IconButton target="_blank" rel="noopener noreferrer" key={href} href={href}>
+                {linksMap.map(([icon, href, title]) => (
+                    <IconButton
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        key={href}
+                        href={href}
+                        title={title}
+                        aria-label={title}
+                    >
                         {icon}
                     </IconButton>
                 ))}

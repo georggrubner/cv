@@ -14,11 +14,12 @@ export const ThemeSwitcher = () => {
     }, [])
 
     const nextTheme = mode === "dark" ? "light" : "dark"
+    const nextThemeText = `Switch to ${nextTheme} theme`
 
     return (
         <IconButton
-            title={`Switch to ${nextTheme} theme`}
-            aria-label={nextTheme}
+            title={nextThemeText}
+            aria-label={nextThemeText}
             onClick={() => setMode(nextTheme)}
         >
             {mode === "dark" ? <LightMode /> : <DarkMode />}
