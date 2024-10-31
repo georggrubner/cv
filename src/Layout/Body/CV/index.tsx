@@ -1,9 +1,15 @@
-import { Box, Link, List, ListItem, ListItemText, Stack, Typography } from "@mui/material"
+import { Box, Button, Link, List, ListItem, ListItemText, Stack, Typography } from "@mui/material"
 import { skills, projects } from "./data"
+import pdf from "/src/assets/CV Georg Grubner.pdf"
 
 export const CV = () => {
     return (
-        <Box maxWidth={{ xs: "80vw", md: "60vw" }} marginX="auto" marginTop={{ xs: 4, md: 10 }}>
+        <Box maxWidth={{ xs: "80vw", md: "60vw" }} marginX="auto" marginTop={{ xs: 3, md: 6 }}>
+            <Box marginBottom={3} display="flex" justifyContent="flex-end">
+                <Button href={pdf} target="_blank">
+                    Download CV
+                </Button>
+            </Box>
             <Stack justifyContent="space-around" gap={4}>
                 <Stack gap={2}>
                     <Typography variant="h4">#Projects</Typography>
