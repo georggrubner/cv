@@ -4,6 +4,7 @@ export const skills = [
     ["cypress", "https://www.cypress.io/"],
     ["emotion", "https://emotion.sh/"],
     ["eslint", "https://eslint.org/"],
+    ["jest", "https://jestjs.io/"],
     ["material-ui", "https://mui.com/"],
     ["next.js", "https://nextjs.org/"],
     ["node", "https://nodejs.org/"],
@@ -38,17 +39,8 @@ export const projects = [
             "Developed a web-based data visualization dashboard for a SaaS company to provide users with insights into their usage metrics.",
         features:
             "Designed and implemented interactive charts, filtering options, and real-time data updates.",
-        tech: "react, redux, axios, custom Design System",
+        tech: "react, redux, axios, custom Design System, jest and cypress for testing",
         achievements: "Delivered a highly interactive and responsive dashboard",
-    },
-    {
-        name: "Insurance Customer Portal",
-        description:
-            "Developed a responsive web application for an insurance company to allow customers to view and manage their insurance policies, claims, and payments.",
-        features:
-            "The portal included policy details, claim history, premium due dates, and the ability to download policy documents.",
-        tech: "react, material-ui, recoil, react-query, playwright for testing.",
-        achievements: "Reduced customer support queries with easy access to policy information.",
     },
     {
         name: "Data Aggregation and Streamlining Tool",
@@ -61,12 +53,21 @@ export const projects = [
             "Simplified complex workflows, reduced setup time, and increased accuracy through intuitive error-handling and monitoring capabilities.",
     },
     {
+        name: "Insurance Customer Portal",
+        description:
+            "Developed a responsive web application for an insurance company to allow customers to view and manage their insurance policies, claims, and payments.",
+        features:
+            "The portal included policy details, claim history, premium due dates, and the ability to download policy documents.",
+        tech: "react, material-ui, recoil, react-query, jest and playwright for testing.",
+        achievements: "Reduced customer support queries with easy access to policy information.",
+    },
+    {
         name: "User Permissions Administration Tool",
         description:
             "Built a front-end interface for managing user roles and permissions, enabling administrators to assign, modify, and review access levels for users across different departments and groups.",
         features:
             "Developed role-based access controls (RBAC) with a user-friendly interface for assigning roles, viewing permissions hierarchies, and managing access rights. Integrated detailed filtering for quick search of users and roles.",
-        tech: "react, material-ui, classnames, vite, react-query, zod",
+        tech: "react, material-ui, classnames, vite, react-query, zod, jest",
         achievements:
             "Increased administrative efficiency and simplified role management processes, resulting in a reduction in permission-related errors.",
     },
@@ -76,7 +77,7 @@ export const projects = [
             "Designed a responsive front-end for a car insurance calculator, allowing customers to input vehicle and driver information to receive instant quotes based on coverage preferences.",
         features:
             "Created dynamic, user-friendly forms with real-time input validation and feedback to enhance the quote calculation process. Developed custom styling and logic to handle varying quote options to ensure a smooth user experience.",
-        tech: "react, material-ui, recoil, react-query",
+        tech: "react, material-ui, recoil, react-query, jest and playwright for testing",
         achievements:
             "Increased administrative efficiency and simplified role management processes, resulting in a reduction in permission-related errors.",
     },
