@@ -13,6 +13,7 @@ export const skills = [
     ["react-query", "https://tanstack.com/query/"],
     ["react", "https://react.dev/"],
     ["recoil", "https://recoiljs.org/"],
+    ["redux", "https://redux.js.org/"],
     ["storybook", "https://storybook.js.org/"],
     ["tailwindcss", "https://tailwindcss.com/"],
     ["testing-library", "https://testing-library.com/"],
