@@ -41,12 +41,12 @@ export const projects = [
         features:
             "Designed and implemented interactive charts, filtering options, and real-time data updates.",
         tech: "react, redux, axios, custom Design System, jest and cypress for testing",
-        achievements: "Delivered a highly interactive and responsive dashboard",
+        achievements: "Delivered a highly interactive and responsive dashboard.",
     },
     {
         name: "Data Aggregation and Streamlining Tool",
         description:
-            "Implemented a responsive front-end interface for a data aggregation tool, empowering administrators to efficiently manage, monitor, and configure API data sources to streamline the collection of data from various sources, normalize it, and then forward it",
+            "Implemented a responsive front-end interface for a data aggregation tool, empowering administrators to efficiently manage, monitor, and configure API data sources to streamline the collection of data from various sources, normalize it, and then forward it.",
         features:
             "Implemented a user-friendly interface for setting up and managing data source connections, viewing data ingestion statuses, and handling error logs. Created detailed filtering and search capabilities for quick data source lookup and streamlined navigation for enhanced efficiency.",
         tech: "react, redux, axios, custom Design System",
@@ -59,7 +59,7 @@ export const projects = [
             "Developed a responsive web application for an insurance company to allow customers to view and manage their insurance policies, claims, and payments.",
         features:
             "The portal included policy details, claim history, premium due dates, and the ability to download policy documents.",
-        tech: "react, material-ui, recoil, react-query, jest and playwright for testing.",
+        tech: "react, material-ui, recoil, react-query, jest and playwright for testing",
         achievements: "Reduced customer support queries with easy access to policy information.",
     },
     {
