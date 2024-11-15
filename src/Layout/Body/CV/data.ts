@@ -46,7 +46,7 @@ export const projects = [
     {
         name: "Data Aggregation and Streamlining Tool",
         description:
-            "Developed a responsive front-end for a data aggregation tool, enabling administrators to manage, monitor, and configure data sources efficiently across various APIs.Developed a data aggregation and processing tool to streamline the collection of data from various sources, normalize it, and then forward it.",
+            "Implemented a responsive front-end interface for a data aggregation tool, empowering administrators to efficiently manage, monitor, and configure API data sources to streamline the collection of data from various sources, normalize it, and then forward it",
         features:
             "Implemented a user-friendly interface for setting up and managing data source connections, viewing data ingestion statuses, and handling error logs. Created detailed filtering and search capabilities for quick data source lookup and streamlined navigation for enhanced efficiency.",
         tech: "react, redux, axios, custom Design System",
